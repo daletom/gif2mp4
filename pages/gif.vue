@@ -1,12 +1,10 @@
 <template>
 <div>
-  <h1 class="m-2 text-3xl text-center">This Page is Made Entirely of MP4 Videos</h1>
-  <h3 class="text-center">The videos weigh only 280 KB. See how we built this with Nuxt & imgix on the <a class="link underline" href="/about">about page</a>.</h3>
-  <div class="flex flex-wrap content-evenly">
+  <h1 class="m-2 text-3xl text-center">This Page is Made Entirely of Animated GIFs/Webps</h1>
+  <h3 class="text-center">The Animated GIFs weigh 6.8 MB, or 30x more than MP4s. See how we built this with Nuxt & imgix on the <a class="link underline" href="/about">about page</a>.</h3>
+  <div class="flex flex-wrap">
     <div v-for="gif of gifs" :key="gif.id" class="p-4">
-      <video autoplay loop muted playsinline style="width: 300px; height: 190px;">
-        <source :src="host + gif.filename + '?fm=mp4&w=300&h=190&fit=crop'" type="video/mp4" />
-      </video>
+      <img :src="host + gif.filename + '?auto=format,compress&w=300&h=190&fit=crop'" />
     </div>
   </div>
 </div>
@@ -116,5 +114,4 @@ export default {
 .links {
   padding-top: 15px;
 }
-
 </style>
