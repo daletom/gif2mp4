@@ -3,7 +3,7 @@
   <h1 class="m-2 text-3xl text-center">This Page is Made Entirely of MP4 Videos</h1>
   <h3 class="text-center">The videos weigh only 280 KB. See how we built this with Nuxt & imgix on the <a class="link underline" href="/about">about page</a>.</h3>
   <div class="flex flex-wrap content-evenly">
-    <div v-for="gif of gifs" :key="gif.id" class="p-4">
+    <div v-for="gif of gifs" :key="gif.id" class="p-4 m-auto">
       <video autoplay loop muted playsinline style="width: 300px; height: 190px;">
         <source :src="host + gif.filename + '?fm=mp4&w=300&h=190&fit=crop'" type="video/mp4" />
       </video>
