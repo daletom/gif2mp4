@@ -17,6 +17,9 @@
         <a href="/gif" class="no-underline font-semibold block mt-4 sm:inline-block sm:mt-0 text-orange-500 hover:text-white mr-4">
           GIFs
         </a>
+        <a href="/about" class="no-underline font-semibold block mt-4 sm:inline-block sm:mt-0 text-orange-500 hover:text-white mr-4">
+          About
+        </a>
         <a href="https://docs.imgix.com/apis/rendering/format/fm#sts=gif" class="font-semibold no-underline block mt-4 sm:inline-block sm:mt-0 text-orange-500 hover:text-white mr-4">
           Docs
         </a>
