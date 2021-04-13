@@ -1,7 +1,7 @@
 <template>
     <div>
         <input class="m-4" type="file" @change="uploadableFile" />
-        <img :src="uploadableFileUrl" />
+        <img :src="uploadableFileUrl" width="500px" class="m-auto" />
         <button class="bg-blue-500 rounded p-2 m-4 on:hover-bg-white" @click="uploadGif">Submit GIF</button>
     </div>
 </template>
