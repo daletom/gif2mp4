@@ -5,11 +5,11 @@
       <span class="font-semibold text-xl tracking-tight ml-2">Gif to MP4</span>
     </div>
     <div class="block sm:hidden">
-      <button @click="toggle" class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-100 hover:text-white hover:border-white">
+      <button class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-100 hover:text-white hover:border-white">
         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
       </button>
     </div>
-    <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
+    <div :class="'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
       <div class="text-sm sm:flex-grow">
         <a href="/" class="no-underline font-semibold block mt-4 sm:inline-block sm:mt-0 text-orange-500 hover:text-white mr-4">
           MP4s
@@ -32,10 +32,10 @@
 </template>
 <script>
 export default {
-    methods: {
+    /*methods: {
         toggle() {
     	this.open = !this.open
     }
-    }
+    }*/
 }
 </script>
