@@ -24,10 +24,9 @@ export default {
                 this.uploadableFileBase64 = event.target.result
             };
             await fileReader.readAsDataURL(event.target.files[0]);
-            console.log(fileReader);
         },
         async uploadGif() {
-            await this.$axios.$post("http://localhost:3000/api/upload", {
+            await this.$axios.$post("/api/upload", {
                 name: this.uploadableFileName,
                 gif: this.uploadableFileBase64
             })
